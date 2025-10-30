@@ -23,6 +23,4 @@ public class LoginDetails {
 
     @Column(nullable = false)
     private String password;
-
-    private LocalDateTime last_login;
 }

@@ -8,6 +8,6 @@ import java.util.Optional;
 public interface MonthlyAttendanceSummaryRepository extends JpaRepository<MonthlyAttendanceSummary, Long> {
 
     Optional<MonthlyAttendanceSummary> findByEmployeeName(String employeeName);
-    Optional<MonthlyAttendanceSummary> findByEmployeeNameAndEmployeeMonth(String employeeName, Integer month);
+    Optional<MonthlyAttendanceSummary> findByEmployeeNameAndMonth(String employeeName, Integer month);
 
 }
