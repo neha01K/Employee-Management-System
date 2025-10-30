@@ -13,6 +13,6 @@ import java.util.Optional;
 public interface LeaveHistoryRepository extends JpaRepository<LeaveHistory, Long> {
 
     Optional<LeaveHistory> findByEmployee(Employee employee);
-    Optional<LeaveHistory> findByStatus(LeaveStatus leaveStatus);
+    Optional<LeaveHistory> findByLeaveStatus(LeaveStatus leaveStatus);
     Optional<LeaveHistory> findByAppliedDate(LocalDate appliedDate);
 }
