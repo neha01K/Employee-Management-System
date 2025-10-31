@@ -21,7 +21,7 @@ public class Attendance {
     @Column(name="serial_no")
     private Long id;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(referencedColumnName="employee_id", name="employee_id")
     private Employee employee;
 

@@ -19,9 +19,9 @@ public class LeaveBalance {
     @JoinColumn(referencedColumnName = "employee_id", name="employee_id", nullable=false, unique=true)
     private Employee employee;
 
-    private Integer sickLeave=12;
-    private Integer casualLeave=15;
+    private Integer sickLeave;
+    private Float casualLeave;
     private Integer annualLeave=18;
-    private Integer maternityLeave=2;
-    private Integer parentalLeave=2;
+    private Integer maternityLeave;
+    private Integer parentalLeave;
 }
